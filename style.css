@@ -1,0 +1,718 @@
+/* import font url  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box !important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 3%;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+}
+
+.links {
+    display: flex;
+    gap: 13px;
+
+    & a {
+        color: black;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+}
+
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    & button:nth-child(1) {
+        background-color: #F1F1F1;
+        padding: 14px 30px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        font-weight: 500;
+
+    }
+
+    & button:nth-child(2) {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+    }
+
+}
+
+.hero {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    .form {
+        width: 80%;
+        border: 1px solid black;
+        height: 55%;
+        background-color: #ffff;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        border-radius: 15px;
+
+        & h1 {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+        .form-body {
+            display: grid;
+            grid-template-columns: repeat(4.1fr);
+            grid-template-rows: auto auto;
+            gap: 25px;
+            text-align: center;
+
+            & div {
+                & button {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    border: none;
+                    outline: none;
+
+                }
+            }
+        }
+
+        .upper-div {
+            grid-column: span 1;
+            grid-row: 1;
+
+            & select {
+                width: 200px;
+                padding: 15px;
+                font-size: 1.2rem;
+                font-weight: 600;
+                border: none;
+                outline: none;
+                background: #ECECEC;
+                border-radius: 15px;
+            }
+        }
+
+        #Button1 {
+            grid-column: span 3;
+            background-color: #ECECEC;
+            padding: 15px;
+            border-radius: 15px;
+
+        }
+
+        #Button2 {
+            background: #00EBC7;
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        #Button2 button {
+            background-color: #00EBC7;
+
+        }
+
+    }
+
+    #bottom-btn {
+        position: absolute;
+        bottom: 0;
+        padding: 10px 25px;
+        background-color: transparent;
+        font-size: 22px;
+        border-radius: 50px;
+        border: 2px solid white;
+        color: white;
+        margin-bottom: 50px;
+
+        & hr {
+            border: 1px solid white;
+        }
+    }
+}
+
+/* buy and sell section start  */
+#buy-sell {
+    width: 100%;
+    background-color: #FDE24F;
+    text-align: center;
+    padding: 50px 0;
+
+    & h3 {
+        font-size: 34px;
+        font-weight: 400;
+        display: inline;
+    }
+
+}
+
+.buy-sell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+    padding: 2% 0;
+}
+
+/* security section start  */
+.security {
+    width: 100%;
+    padding: 4% 0;
+
+    & h6 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .security-btn {
+        font-size: 22px;
+        font-weight: 500;
+        padding: 15px 30px;
+        border-radius: 30px;
+    }
+
+    & button {
+        position: relative;
+        display: inline-block;
+        right: 33%;
+        left: 40%;
+        bottom: 0;
+        top: 0;
+    }
+
+    .security-div {
+        display: flex;
+        padding: 9% 6%;
+        align-items: center;
+        justify-content: center;
+
+        & hr {
+            border: 1px solid black;
+            width: 300px;
+            position: relative;
+            top: -45px;
+            display: inline;
+            margin: 0 20px;
+        }
+    }
+
+}
+
+.security-div div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h3 {
+        font-size: 24px;
+        padding: 15px 0;
+    }
+
+    & p {
+        font-size: 20px;
+
+    }
+
+    & h5 {
+        font-size: 1rem;
+        text-decoration: underline;
+        margin-top: 50px;
+    }
+}
+
+.buySection {
+    width: 100%;
+    border-top: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+}
+
+.buy {
+    grid-column: 1;
+    grid-row: 1;
+    border-right: 2px solid black;
+
+}
+
+.buy2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.sell div {
+    display: flex;
+    border: 2px solid black;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.sell {
+    padding-left: 9%;
+    padding-top: 3%;
+    min-width: 50%;
+    height: 100%;
+    padding-bottom: 50px;
+
+    & h3 {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 50px 0;
+
+    }
+
+    & button {
+        /* width: 181px;
+        height: 27px; */
+        padding: 10px 30px;
+        border-radius: 15px;
+        position: relative;
+        left: 33%;
+        margin: 20px auto;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+    }
+
+}
+
+.des {
+    width: 100%;
+    height: 500px;
+    background-color: #CFBAFF;
+    padding-top: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
+
+    & h1 {
+        font-size: 4rem;
+        text-align: center;
+
+    }
+
+    .des-btn {
+        font-size: 1.2rem;
+        padding: 10px 25px;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        position: relative;
+        bottom: -81px;
+        right: -44%;
+
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 6% 5%;
+
+    & div {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+
+
+        & h3 {
+            align-items: center;
+            margin: 20px 0;
+        }
+
+    }
+}
+
+.copyright {
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+    color: white;
+    padding: 10px 4%;
+    text-align: center;
+}
+
+/* responsive web design  */
+@media (max-width:600px) {
+
+    header {
+        padding: 0 1%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        position: fixed !important;
+       
+
+        .logo img {
+            width: 90%;
+            
+        }
+
+        .logo {
+            width: 35%;
+        }
+    }
+
+    .links {
+        display: none;
+    }
+
+    .sign-up {
+        gap: 5px;
+
+        & button:nth-child(1) {
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: .8rem;
+        }
+
+        & button:nth-child(2) {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            font-size: .8rem;
+            border-radius: 15px;
+        }
+
+        #icon img {
+            width: 25px;
+        }
+
+    }
+
+
+    .hero {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 180vh;
+
+
+        .form {
+            width: 90%;
+            height: 58%;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+            border-radius: 15px;
+
+            & h1 {
+                font-size: 1.3rem;
+                font-weight: 500;
+                margin: 20px 0;
+            }
+
+            .form-body {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                width: 100%;
+
+                & div {
+                    & button {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        border: none;
+                        outline: none;
+
+                    }
+                }
+            }
+
+            .upper-div {
+                width: 100%;
+
+
+                & select {
+                    width: 100%;
+                    padding: 15px;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    border: none;
+                    outline: none;
+                    background: #ECECEC;
+                    border-radius: 0px;
+                }
+            }
+
+            
+            #Button1 {
+                margin-top: 40px;
+                border-radius: 0px;
+                
+            }
+            
+            
+            #Button2 {
+               
+                border-radius: 0px;
+            }
+
+            #Button2 button {
+                background-color: #00EBC7;
+
+            }
+
+        }
+
+        #bottom-btn {
+            position: absolute;
+            bottom: -397px;
+        }
+    }
+
+    #buy-sell {
+        width: 100%;
+
+        & h3 {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .buy-sell {
+        gap: 2%;
+        padding: 1% 0;
+    }
+    .buy-sell div{
+        width: 50%;
+    }
+    .buy-sell div img{
+        width: 100%;
+    }
+    .security {
+        padding: 2% 0;
+    
+        & h6 {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    
+        .security-btn {
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 7px 14px;
+            border-radius: 30px;
+            border: 1px solid black;
+            position: relative;
+           
+        }
+    
+        & button {
+            position: relative;
+            display: inline-block;
+            right: 27%;
+            left: 26%;
+         margin-bottom: 20px;
+        }
+    
+        .security-div {
+            display: flex;
+            padding: 9% 6%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            & hr {
+                display: none;
+                margin: 0 0px;
+            }
+        }
+    
+    }
+    
+    .security-div div {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    
+        & h3 {
+            font-size: 16px;
+            padding: 15px 0;
+        }
+    
+        & p {
+            font-size: 15px;
+    
+        }
+    
+        & h5 {
+            font-size: .8rem;
+            text-decoration: underline;
+            margin-top: 20px;
+        }
+    }
+
+    
+.buySection {
+    width: 100%;
+    border-top: none;
+    display: flex;
+   flex-direction: column;
+   
+}
+
+.buy {
+   width: 100%;
+   border: none;
+
+}
+
+.buy2 {
+   width: 100%;
+}
+
+.sell div {
+    display: flex;
+    border: 1px solid black;
+    padding: 7px 4px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.sell {
+    padding-left: 0%;
+    padding-top: 3%;
+    min-width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+
+    & h3 {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 50px 14px;
+
+    }
+
+    & button {
+        padding: 10px 30px;
+        border-radius: 15px;
+        position: relative;
+        left: 22%;
+        margin: 20px auto;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+    }
+
+}
+
+.des {
+    width: 100%;
+    height: 300px;
+    background-color: #CFBAFF;
+    padding-top: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+
+    & h1 {
+        font-size: 1.8rem;
+        text-align: center;
+
+    }
+
+    .des-btn {
+        font-size: 1rem;
+        padding: 10px 25px;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        position: relative;
+        bottom: -81px;
+        right: -30%;
+
+    }
+}
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: black;
+    padding:5% 6%;
+
+    & div {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+
+
+        & h3 {
+            align-items: center;
+            margin: 20px 0;
+        }
+
+    }
+}
+
+.copyright {
+    width: 100%;
+    font-size: 9px;
+    background-color: black;
+    border-top: 1px solid white;
+    color: white;
+    padding: 10px 2%;
+    text-align: center;
+}
+
+
+}
